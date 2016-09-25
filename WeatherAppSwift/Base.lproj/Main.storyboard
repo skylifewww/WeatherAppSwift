@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="H3f-DP-6ED">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Forecast Weather-->
+        <scene sceneID="NXC-21-vEF">
+            <objects>
+                <viewController id="5U0-QH-t62" customClass="ForecastViewController" customModule="WeatherForecast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zxy-h9-ttS"/>
+                        <viewControllerLayoutGuide type="bottom" id="fOe-ay-yFb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w8q-Gt-wUw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Forecast Weather" id="SaZ-9A-DTh"/>
+                    <navigationItem key="navigationItem" title="Forecast Weather" id="WuN-6s-l1T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yh5-od-EgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="188"/>
+        </scene>
+        <!--Current Weather-->
+        <scene sceneID="vaj-iV-N1P">
+            <objects>
+                <viewController id="U0e-gx-hRL" customClass="ViewController" customModule="WeatherForecast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aVz-OT-ZXW"/>
+                        <viewControllerLayoutGuide type="bottom" id="H5m-Si-HSE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aMj-Pa-k8i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100°C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdZ-xB-yA2">
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="100"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="At 13:00 is it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCl-PN-PjL">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Speed, m/s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-dt-yuo">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.62" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZM-c6-qSf">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sky is Clear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2L-Sl-NcV">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AUB-Hy-RT8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Pga-db-2ST"/>
+                                    <constraint firstAttribute="height" constant="50" id="ofo-vT-EtJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London, UK" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJc-n2-2MR">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather Forecast" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXz-z5-uF6">
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAm-dR-OCV">
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="25"/>
+                                <size key="titleShadowOffset" width="3" height="3"/>
+                                <state key="normal" image="byCity.png">
+                                    <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="initAddCity:" destination="U0e-gx-hRL" eventType="touchUpInside" id="3Vq-tj-pLz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ac-aw-Fla">
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="25"/>
+                                <size key="titleShadowOffset" width="3" height="3"/>
+                                <state key="normal" image="geolocation.png">
+                                    <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="initByGeo:" destination="U0e-gx-hRL" eventType="touchUpInside" id="xny-RG-kBJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Geo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3e5-pf-wy7">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11f-29-hsD">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fci-1Y-RAh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="Fjs-CX-wFe"/>
+                                    <constraint firstAttribute="width" constant="179" id="fL7-C6-yeY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="100"/>
+                                <state key="normal" title="100°C">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setDegreesAction:" destination="U0e-gx-hRL" eventType="touchUpInside" id="Xqz-ng-yQV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity, %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYP-2C-8Wi">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rat-Gq-atI">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fci-1Y-RAh" firstAttribute="centerX" secondItem="aMj-Pa-k8i" secondAttribute="centerX" id="0Nj-lP-G4h"/>
+                            <constraint firstItem="NCl-PN-PjL" firstAttribute="centerX" secondItem="aMj-Pa-k8i" secondAttribute="centerX" id="1Bv-OB-0dR"/>
+                            <constraint firstItem="gAm-dR-OCV" firstAttribute="centerY" secondItem="aMj-Pa-k8i" secondAttribute="centerY" id="4dI-sd-ns6"/>
+                            <constraint firstItem="RJc-n2-2MR" firstAttribute="leading" secondItem="AUB-Hy-RT8" secondAttribute="trailing" constant="10" id="7UZ-em-P6p"/>
+                            <constraint firstItem="5Ac-aw-Fla" firstAttribute="centerY" secondItem="aMj-Pa-k8i" secondAttribute="centerY" id="8Xl-ae-aex"/>
+                            <constraint firstItem="RJc-n2-2MR" firstAttribute="top" secondItem="aVz-OT-ZXW" secondAttribute="bottom" constant="27" id="CgP-h7-Wxh"/>
+                            <constraint firstItem="Rat-Gq-atI" firstAttribute="top" secondItem="bYP-2C-8Wi" secondAttribute="bottom" constant="8" id="DH3-4U-z6E"/>
+                            <constraint firstItem="C2L-Sl-NcV" firstAttribute="centerX" secondItem="aMj-Pa-k8i" secondAttribute="centerX" id="JUk-2U-fQT"/>
+                            <constraint firstItem="UXz-z5-uF6" firstAttribute="top" secondItem="aVz-OT-ZXW" secondAttribute="bottom" id="JYJ-qv-lNQ"/>
+                            <constraint firstItem="sdZ-xB-yA2" firstAttribute="top" secondItem="NCl-PN-PjL" secondAttribute="bottom" constant="-1" id="KYG-6I-HHu"/>
+                            <constraint firstItem="gAm-dR-OCV" firstAttribute="top" secondItem="11f-29-hsD" secondAttribute="bottom" constant="8" id="Kap-Y6-8I0"/>
+                            <constraint firstItem="JOb-dt-yuo" firstAttribute="leading" secondItem="aMj-Pa-k8i" secondAttribute="leadingMargin" constant="-11" id="Mfj-K1-w7q"/>
+                            <constraint firstItem="H5m-Si-HSE" firstAttribute="top" secondItem="C2L-Sl-NcV" secondAttribute="bottom" constant="57" id="OQH-D6-0Vx"/>
+                            <constraint firstItem="sdZ-xB-yA2" firstAttribute="centerX" secondItem="aMj-Pa-k8i" secondAttribute="centerX" id="T8j-Xl-St6"/>
+                            <constraint firstItem="H5m-Si-HSE" firstAttribute="top" secondItem="JOb-dt-yuo" secondAttribute="bottom" constant="149" id="TMY-sn-5Hs"/>
+                            <constraint firstItem="UXz-z5-uF6" firstAttribute="centerX" secondItem="aMj-Pa-k8i" secondAttribute="centerX" id="Vux-ge-HU0"/>
+                            <constraint firstItem="AUB-Hy-RT8" firstAttribute="leading" secondItem="aMj-Pa-k8i" secondAttribute="leadingMargin" constant="30" id="ZQD-bP-eXy"/>
+                            <constraint firstItem="H5m-Si-HSE" firstAttribute="top" secondItem="bYP-2C-8Wi" secondAttribute="bottom" constant="149" id="b99-mt-Q88"/>
+                            <constraint firstItem="11f-29-hsD" firstAttribute="leading" secondItem="aMj-Pa-k8i" secondAttribute="leadingMargin" constant="31" id="dES-If-Oyb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3e5-pf-wy7" secondAttribute="trailing" constant="30" id="diA-Kd-mJV"/>
+                            <constraint firstItem="fci-1Y-RAh" firstAttribute="centerY" secondItem="aMj-Pa-k8i" secondAttribute="centerY" id="diG-DA-XnK"/>
+                            <constraint firstItem="AUB-Hy-RT8" firstAttribute="top" secondItem="aVz-OT-ZXW" secondAttribute="bottom" constant="23" id="ect-k6-VS6"/>
+                            <constraint firstItem="5Ac-aw-Fla" firstAttribute="top" secondItem="3e5-pf-wy7" secondAttribute="bottom" constant="8" id="fNT-GF-eOT"/>
+                            <constraint firstItem="SZM-c6-qSf" firstAttribute="leading" secondItem="aMj-Pa-k8i" secondAttribute="leadingMargin" constant="26" id="fev-Hd-jlb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bYP-2C-8Wi" secondAttribute="trailing" constant="-14" id="lZb-1p-Zu1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rat-Gq-atI" secondAttribute="trailing" constant="23" id="mlE-CM-rjL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Ac-aw-Fla" secondAttribute="trailing" constant="12" id="mt6-4M-nA4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RJc-n2-2MR" secondAttribute="trailing" constant="30" id="vqG-3j-tBM"/>
+                            <constraint firstItem="sdZ-xB-yA2" firstAttribute="centerY" secondItem="aMj-Pa-k8i" secondAttribute="centerY" id="x2V-rH-2sv"/>
+                            <constraint firstItem="SZM-c6-qSf" firstAttribute="top" secondItem="JOb-dt-yuo" secondAttribute="bottom" constant="8" id="yBp-ge-khh"/>
+                            <constraint firstItem="gAm-dR-OCV" firstAttribute="leading" secondItem="aMj-Pa-k8i" secondAttribute="leadingMargin" constant="12" id="ymb-vn-G3x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Current Weather" id="x1f-a9-9bt">
+                        <barButtonItem key="leftBarButtonItem" title="City" id="ofH-SY-DaY">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addCity:" destination="U0e-gx-hRL" id="li7-py-igg"/>
+                            </connections>
+                        </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q0e-UN-eKT">
+                            <rect key="frame" x="153.5" y="7" width="68" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Geo">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="byGeoLoc:" destination="U0e-gx-hRL" eventType="touchUpInside" id="8Lb-zn-AKI"/>
+                            </connections>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" title="More" id="ezG-cb-Ww3">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="5U0-QH-t62" kind="push" identifier="moreInfo" id="QYW-ld-4cH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="RJc-n2-2MR" id="J8L-r6-NNs"/>
+                        <outlet property="descriptionLabel" destination="C2L-Sl-NcV" id="vgH-gQ-879"/>
+                        <outlet property="geoButtomlabel" destination="Q0e-UN-eKT" id="hTf-BH-yaf"/>
+                        <outlet property="humidityLabel" destination="Rat-Gq-atI" id="Sm2-02-sUW"/>
+                        <outlet property="humidityTextLabel" destination="bYP-2C-8Wi" id="wcy-IF-hu2"/>
+                        <outlet property="iconImageView" destination="AUB-Hy-RT8" id="m5b-C8-fr4"/>
+                        <outlet property="initCityButton" destination="gAm-dR-OCV" id="D0l-Zu-hIN"/>
+                        <outlet property="initCityLabel" destination="11f-29-hsD" id="lvd-lV-a36"/>
+                        <outlet property="initGeoButton" destination="5Ac-aw-Fla" id="ah9-ni-70F"/>
+                        <outlet property="initGeoLabel" destination="3e5-pf-wy7" id="W75-0z-nXK"/>
+                        <outlet property="initWeatherLabel" destination="UXz-z5-uF6" id="Oky-jh-Csk"/>
+                        <outlet property="speedWindLabel" destination="SZM-c6-qSf" id="VhL-nz-o6g"/>
+                        <outlet property="speedWindTextLabel" destination="JOb-dt-yuo" id="wrg-ed-lTP"/>
+                        <outlet property="tempLabel" destination="sdZ-xB-yA2" id="BAP-p4-oNx"/>
+                        <outlet property="tempLabelButton" destination="fci-1Y-RAh" id="vkO-R6-eZb"/>
+                        <outlet property="timeLabel" destination="NCl-PN-PjL" id="fRf-iV-amA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOj-yl-z6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="188"/>
+        </scene>
+        <!--Current Weather-->
+        <scene sceneID="R8b-US-ocz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H3f-DP-6ED" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Current Weather" id="KRU-6a-Dk0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Vp-TJ-jOV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="U0e-gx-hRL" kind="relationship" relationship="rootViewController" id="YbB-dQ-Ue6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8e7-dj-cKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123" y="188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="byCity.png" width="120" height="120"/>
+        <image name="geolocation.png" width="120" height="120"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
