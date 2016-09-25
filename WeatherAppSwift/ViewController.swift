@@ -122,6 +122,8 @@ class ViewController: UIViewController, OpenWeatherMapDelegate, CLLocationManage
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        
         degreesName = (defaultDegrees != nil) ? defaultDegrees! : "°C"
         
         //GifBackground
@@ -462,16 +464,15 @@ class ViewController: UIViewController, OpenWeatherMapDelegate, CLLocationManage
     
     // MARK: MBProgressHUD
     func activityIndicator() {
-        
-//        hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+
         
         hud.label.text = "Loading..."
         hud.detailsLabel.text = "Please Wait!"
         hud.isUserInteractionEnabled = false
-//        hud.backgroundView.color = UIColor.black
-//        hud.backgroundView.style = MBProgressHUDBackgroundStyle.blur
-        self.view.addSubview(hud)
-        hud.show(animated: true)
+        hud.backgroundView.color = UIColor.black
+        hud.backgroundView.style = MBProgressHUDBackgroundStyle.blur
+//        self.view.addSubview(hud)
+//        hud.show(animated: true)
 //        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0))
 
 //        {
