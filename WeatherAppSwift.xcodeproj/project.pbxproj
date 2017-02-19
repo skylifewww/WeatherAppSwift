@@ -178,6 +178,7 @@
 				7538E77F1D97006700B1382B /* Frameworks */,
 				7538E7801D97006700B1382B /* Resources */,
 				75D144661D98356700C4E240 /* CopyFiles */,
+				75BFFD361E59D84100384F67 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,6 +252,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75BFFD361E59D84100384F67 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Carthage-Installation-Flag\"\nif [ -f \"$FILE\" ]; then\nexit 0\nfi\ntouch \"$FILE\"\n/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7538E77E1D97006700B1382B /* Sources */ = {
@@ -396,6 +414,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nybozhinsky.WeatherAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "WeatherAppSwift/Objective-C Categories";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
@@ -413,6 +433,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nybozhinsky.WeatherAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "WeatherAppSwift/Objective-C Categories";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
